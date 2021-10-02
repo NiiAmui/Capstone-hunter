@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../images/main1.png");
+  width: 100vw;
+  height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  background-size: 100% 100%;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    height: 8%;
+    margin: 1rem 0.8rem;
+
+    .logo {
+      height: 100%;
+    }
+
+    img {
+      height: inherit;
+    }
+
+    button {
+      background-color: transparent;
+      border: 2px solid white;
+      color: white;
+      font-size: 1rem;
+      box-sizing: content-box;
+      padding: 0.2rem 1rem;
+      border-radius: 20px;
+
+      &:hover {
+        color: rgb(0, 151, 151);
+        background-color: white;
+        transition: ease-in-out;
+        box-sizing: initial;
+      }
+    }
+  }
+
+  .body {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90%;
+    margin: 0 0.8rem;
+    justify-content: center;
+
+    .input-card {
+      display: flex;
+      flex-direction: column;
+      // border: 1px solid red;
+      align-content: center;
+      justify-content: center;
+      margin-bottom: 6rem;
+
+      .input {
+        padding-right: 5%;
+        width: 25rem;
+        height: 2.6rem;
+        border-radius: 35px;
+        padding: 1rem;
+        border: 1px solid rgb(145, 143, 143);
+        outline: none;
+        font-size: 1.2rem;
+      }
+
+      .domain {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+      }
+
+      .name {
+        margin-top: 1rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: rgb(61, 61, 61);
+      }
+
+      button {
+        font-size: 1.3rem;
+        box-sizing: content-box;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        width: 8rem;
+        border: none;
+        background-color: rgb(0, 168, 168);
+        color: white;
+        margin-top: 0.5rem;
+
+        &:hover {
+          background-color: rgb(3, 73, 73);
+          transition: ease-in-out;
+        }
+      }
+    }
+
+    .output {
+      display: flex;
+      height: 90%;
+      border: 1px solid red;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      padding: 3rem;
+
+
+    .domainResult{
+        background-color: white;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        padding: 1rem;
+        max-width: 23rem;
+
+       li{
+           border-top: 1px solid rgb(107, 106, 106);
+           
+           span{
+               font-weight: 500;
+               font-size: 1.5rem;
+           }
+       }
+    }
+
+    .individualResult{
+        background-color: white;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        padding: 1rem;
+        max-width: 23rem;
+
+
+        span{
+            font-weight: 500;
+            font-size: 1.5rem;
+        }
+
+        .line{
+            border-top: 1px solid rgb(107, 106, 106);
+        }
+    }
+
+
+    }
+  }
+}

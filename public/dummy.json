@@ -1,0 +1,357 @@
+{
+  "data": {
+    "data": {
+      "domain": "amalitech.org",
+      "disposable": false,
+      "webmail": false,
+      "accept_all": false,
+      "pattern": "{first}.{last}",
+      "organization": "Amali Tech",
+      "country": null,
+      "state": null,
+      "emails": [
+        {
+          "value": "martin.hecker@amalitech.org",
+          "type": "personal",
+          "confidence": 99,
+          "sources": [
+            {
+              "domain": "amalitech.org",
+              "uri": "http://amalitech.org/our-team",
+              "extracted_on": "2020-08-30",
+              "last_seen_on": "2021-09-14",
+              "still_on_page": true
+            }
+          ],
+          "first_name": "Martin",
+          "last_name": "Hecker",
+          "position": "CEO",
+          "seniority": "executive",
+          "department": "executive",
+          "linkedin": "https://www.linkedin.com/in/katrin-hecker-02763850/",
+          "twitter": null,
+          "phone_number": null,
+          "verification": {
+            "date": "2021-08-20",
+            "status": "valid"
+          }
+        },
+        {
+          "value": "judee.bendiola@amalitech.org",
+          "type": "personal",
+          "confidence": 96,
+          "sources": [
+            {
+              "domain": "amalitech.org",
+              "uri": "http://amalitech.org/our-team",
+              "extracted_on": "2020-08-30",
+              "last_seen_on": "2021-09-14",
+              "still_on_page": true
+            }
+          ],
+          "first_name": null,
+          "last_name": null,
+          "position": null,
+          "seniority": null,
+          "department": null,
+          "linkedin": null,
+          "twitter": null,
+          "phone_number": null,
+          "verification": {
+            "date": "2021-08-17",
+            "status": "valid"
+          }
+        },
+        {
+          "value": "nina.gebauer@amalitech.org",
+          "type": "personal",
+          "confidence": 95,
+          "sources": [
+            {
+              "domain": "amalitech.org",
+              "uri": "http://amalitech.org/our-team",
+              "extracted_on": "2021-06-04",
+              "last_seen_on": "2021-09-14",
+              "still_on_page": true
+            },
+            {
+              "domain": "sid-hamburg.de",
+              "uri": "http://sid-hamburg.de/aggregator/categories/9",
+              "extracted_on": "2021-05-18",
+              "last_seen_on": "2021-05-20",
+              "still_on_page": false
+            },
+            {
+              "domain": "sid-hamburg.de",
+              "uri": "http://sid-hamburg.de/aggregator/sources/24",
+              "extracted_on": "2021-05-18",
+              "last_seen_on": "2021-05-21",
+              "still_on_page": false
+            },
+            {
+              "domain": "sid-hamburg.de",
+              "uri": "http://sid-hamburg.de/en/aggregator",
+              "extracted_on": "2021-05-18",
+              "last_seen_on": "2021-05-19",
+              "still_on_page": false
+            },
+            {
+              "domain": "sid-hamburg.de",
+              "uri": "http://sid-hamburg.de/en/aggregator/categories/9",
+              "extracted_on": "2021-05-18",
+              "last_seen_on": "2021-05-20",
+              "still_on_page": false
+            },
+            {
+              "domain": "sid-hamburg.de",
+              "uri": "http://sid-hamburg.de/en/aggregator/sources/24",
+              "extracted_on": "2021-05-18",
+              "last_seen_on": "2021-05-21",
+              "still_on_page": false
+            }
+          ],
+          "first_name": null,
+          "last_name": null,
+          "position": null,
+          "seniority": null,
+          "department": null,
+          "linkedin": null,
+          "twitter": null,
+          "phone_number": null,
+          "verification": {
+            "date": null,
+            "status": null
+          }
+        },
+        {
+          "value": "katrin.hecker@amalitech.org",
+          "type": "personal",
+          "confidence": 94,
+          "sources": [
+            {
+              "domain": "amalitech.org",
+              "uri": "http://amalitech.org/privacy-policy-2",
+              "extracted_on": "2021-09-13",
+              "last_seen_on": "2021-09-13",
+              "still_on_page": true
+            },
+            {
+              "domain": "amalitech.org",
+              "uri": "http://amalitech.org/our-team",
+              "extracted_on": "2021-06-04",
+              "last_seen_on": "2021-09-14",
+              "still_on_page": true
+            }
+          ],
+          "first_name": "Katrin",
+          "last_name": "Hecker",
+          "position": "Marketing Manager",
+          "seniority": "senior",
+          "department": "marketing",
+          "linkedin": "https://www.linkedin.com/in/katrin-hecker-02763850/",
+          "twitter": null,
+          "phone_number": null,
+          "verification": {
+            "date": null,
+            "status": null
+          }
+        },
+        {
+          "value": "thomas.darko@amalitech.org",
+          "type": "personal",
+          "confidence": 94,
+          "sources": [
+            {
+              "domain": "amalitech.org",
+              "uri": "http://amalitech.org/our-team",
+              "extracted_on": "2021-06-04",
+              "last_seen_on": "2021-09-14",
+              "still_on_page": true
+            }
+          ],
+          "first_name": "Thomas",
+          "last_name": "Darko",
+          "position": null,
+          "seniority": null,
+          "department": null,
+          "linkedin": "https://www.linkedin.com/in/thomasdarko/",
+          "twitter": null,
+          "phone_number": null,
+          "verification": {
+            "date": null,
+            "status": null
+          }
+        },
+        {
+          "value": "doris.sarpong@amalitech.org",
+          "type": "personal",
+          "confidence": 93,
+          "sources": [
+            {
+              "domain": "amalitech.org",
+              "uri": "http://amalitech.org/our-team",
+              "extracted_on": "2021-06-04",
+              "last_seen_on": "2021-09-14",
+              "still_on_page": true
+            }
+          ],
+          "first_name": "Doris",
+          "last_name": "Sarpong",
+          "position": "Finance Analyst",
+          "seniority": null,
+          "department": null,
+          "linkedin": null,
+          "twitter": null,
+          "phone_number": null,
+          "verification": {
+            "date": null,
+            "status": null
+          }
+        },
+        {
+          "value": "elena.seyfert@amalitech.org",
+          "type": "personal",
+          "confidence": 93,
+          "sources": [
+            {
+              "domain": "amalitech.org",
+              "uri": "http://amalitech.org/our-team",
+              "extracted_on": "2021-06-04",
+              "last_seen_on": "2021-09-14",
+              "still_on_page": true
+            }
+          ],
+          "first_name": "Elena",
+          "last_name": "Seyfert",
+          "position": null,
+          "seniority": null,
+          "department": null,
+          "linkedin": null,
+          "twitter": null,
+          "phone_number": null,
+          "verification": {
+            "date": null,
+            "status": null
+          }
+        },
+        {
+          "value": "sarah.addo@amalitech.org",
+          "type": "personal",
+          "confidence": 92,
+          "sources": [
+            {
+              "domain": "amalitech.org",
+              "uri": "http://amalitech.org/our-team",
+              "extracted_on": "2021-06-04",
+              "last_seen_on": "2021-09-14",
+              "still_on_page": true
+            }
+          ],
+          "first_name": "Sarah",
+          "last_name": "Addo",
+          "position": null,
+          "seniority": null,
+          "department": null,
+          "linkedin": "https://www.linkedin.com/in/sarah-sackeybea-addo-1a48549b/",
+          "twitter": null,
+          "phone_number": null,
+          "verification": {
+            "date": null,
+            "status": null
+          }
+        },
+        {
+          "value": "mona.schoenfelder@amalitech.org",
+          "type": "personal",
+          "confidence": 91,
+          "sources": [
+            {
+              "domain": "amalitech.org",
+              "uri": "http://amalitech.org/our-team",
+              "extracted_on": "2021-06-04",
+              "last_seen_on": "2021-09-14",
+              "still_on_page": true
+            }
+          ],
+          "first_name": "Mona",
+          "last_name": "Schoenfelder",
+          "position": null,
+          "seniority": null,
+          "department": null,
+          "linkedin": null,
+          "twitter": null,
+          "phone_number": null,
+          "verification": {
+            "date": null,
+            "status": null
+          }
+        },
+        {
+          "value": "vincent.aboagye@amalitech.org",
+          "type": "personal",
+          "confidence": 90,
+          "sources": [
+            {
+              "domain": "amalitech.org",
+              "uri": "http://amalitech.org/our-team",
+              "extracted_on": "2021-06-04",
+              "last_seen_on": "2021-09-14",
+              "still_on_page": true
+            }
+          ],
+          "first_name": "Vincent",
+          "last_name": "Aboagye",
+          "position": "Service Person",
+          "seniority": null,
+          "department": null,
+          "linkedin": "https://www.linkedin.com/in/vincent-aboagye-a78936b4/",
+          "twitter": null,
+          "phone_number": null,
+          "verification": {
+            "date": null,
+            "status": null
+          }
+        }
+      ]
+    },
+    "meta": {
+      "results": 29,
+      "limit": 10,
+      "offset": 0,
+      "params": {
+        "domain": "amalitech.org",
+        "company": null,
+        "type": null,
+        "seniority": null,
+        "department": null
+      }
+    }
+  },
+  "status": 200,
+  "statusText": "",
+  "headers": {
+    "cache-control": "max-age=0, private, must-revalidate",
+    "content-type": "application/json; charset=utf-8"
+  },
+  "config": {
+    "url": "https://api.hunter.io/v2/domain-search?domain=amalitech.org&api_key=8f0adb9292e22bae30a00224c9e40b3ba4c91fb9",
+    "method": "get",
+    "headers": {
+      "Accept": "application/json"
+    },
+    "baseURL": "https://api.hunter.io/v2",
+    "transformRequest": [null],
+    "transformResponse": [null],
+    "timeout": 0,
+    "xsrfCookieName": "XSRF-TOKEN",
+    "xsrfHeaderName": "X-XSRF-TOKEN",
+    "maxContentLength": -1,
+    "maxBodyLength": -1,
+    "transitional": {
+      "silentJSONParsing": true,
+      "forcedJSONParsing": true,
+      "clarifyTimeoutError": false
+    }
+  },
+  "request": {}
+}

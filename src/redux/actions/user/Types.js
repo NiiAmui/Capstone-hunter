@@ -1,0 +1,5 @@
+export const Types = {
+    AUTHENTICATE: 'AUTHENTICATE',
+    RESET_PASSWORD: 'RESET_PASSWORD',
+    LOGOUT: 'LOGOUT'
+} 
