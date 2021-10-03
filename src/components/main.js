@@ -18,7 +18,7 @@ function Main(props) {
     e.preventDefault();
     verifyDomain(domain)
       .then((res) => {
-        // console.log(res)
+        console.log(res)
         return res;
       })
       .catch((err) => {
@@ -71,10 +71,11 @@ function Main(props) {
           </div>
         </nav>
 
-        <div className="body">
-          <div className="input-card">
+        <div className="main-body" id='hardguy'>
+          <div className="input-card" id='inputSide'>
             <form onSubmit={onSubmitForm}>
-              <p className='paragraph'>Type in the domain name you want to see employees</p>
+              <div><p className='paragraph'>Type in the domain name you want to see employees</p></div>
+              
               <input
                 type="text"
                 className="domain input"
@@ -83,7 +84,9 @@ function Main(props) {
                 onChange={(e) => setDomain(e.target.value)}
                 required
               />
-              <p className='paragraph'>Type in the name of the Employee you want to find</p>
+              
+              <div><p className='paragraph'>Type in the name of the Employee you want to find</p></div>
+              
               <input
                 type="text"
                 className="name input"
@@ -96,7 +99,7 @@ function Main(props) {
             </form>
           </div>
 
-          <div className="main-output">
+          <div className="main-output" id='outputSide'>
             {Object.keys(domainInfo).length > 0 && (
               <div className="output">
                 <div className="domainResult" style={{ width: "18rem" }}>

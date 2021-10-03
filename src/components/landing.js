@@ -13,7 +13,7 @@ const Landing = () => {
                 
             </nav>
 
-            <div className='body'>
+            <div className='landing-body'>
                 <div className='text'>
                 <div className='bold'>CURATED SEARCH </div>
                 <div className='paragraph'>Get information on online businesses just by inputting their domain Name. You can also find employees of said companies </div>

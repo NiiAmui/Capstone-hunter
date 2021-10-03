@@ -43,7 +43,7 @@
     }
   }
 
-  .body {
+  .main-body {
     margin-top: 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -155,49 +155,109 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    all: none
+    all: none;
   }
 
   .main {
     padding-bottom: 1.5rem;
-    border: 5px solid yellow;
-    
+    // border: 5px solid yellow;
   }
 
-  .body {
+  #hardguy {
     background-color: rgb(7, 191, 247);
-    height: 95vh;
-    padding: 0.5rem;
-    border: 1px solid red;
-    // display: grid;
-    // grid-auto-flow: row;
-    
+    height: 88%;
+    padding: 0.2rem;
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
 
     .input-card {
-      display: block;
       width: 100%;
-      border: 1px solid yellow;
-      height: inherit;
+      // border: 1px solid yellow;
+      min-height: 50%;
+      margin: 0;
+      padding: 0.3rem;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        padding: 0.3rem;
+
+
+        
+      }
+
+
+      button{
+        margin-top: 0.2rem;
+      }
 
       .paragraph {
-        font-size: 0.5rem;
-        border: 1px solid red;
+        font-size: 0.8rem;
+        color: rgb(255, 255, 255);
+        // border: 1px solid red;
       }
 
       .input {
-        font-size: 0.5rem;
-        width: 95%;
-        border: 1px solid red;
+        font-size: 0.7rem;
+        height: 0.8rem;
+        width: 90%;
+        margin: 0.3rem;
+        border: none;
+        color: rgb(68, 67, 67);
+        // border: 1px solid red;
       }
     }
 
-    button{
+    button {
       width: 60%;
       font-size: medium;
     }
 
-    .main-output {
-      border: 1px solid blue;
+    #outputSide {
+      // border: 1px solid blue;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      min-height: 50%;
+      justify-items: center;
+
+      .output {
+        padding: 0.1rem;
+
+        .domainResult {
+          max-height: 45%;
+          max-width: 90%;
+
+          li {
+            font-size: 0.7rem;
+
+            span {
+              font-weight: 500;
+              font-size: 0.8rem;
+            }
+          }
+        }
+
+        .individualResult {
+          width: 90%;
+          max-height: 45%;
+          font-size: 0.7rem;
+
+          span {
+            font-weight: 500;
+            font-size: 0.8rem;
+          }
+
+          .line {
+            border-top: 1px solid rgb(107, 106, 106);
+          }
+        }
+      }
     }
   }
 }
