@@ -22,7 +22,8 @@ function Main(props) {
         return res;
       })
       .catch((err) => {
-        console.log(err);
+        alert('input a valid domain name');
+        return <Main />
       });
   };
 
@@ -71,79 +72,92 @@ function Main(props) {
         </nav>
 
         <div className="body">
-          <form className="input-card" onSubmit={onSubmitForm}>
-            <p>Type in the domain name you want to see employees</p>
-            <input
-              type="text"
-              className="domain input"
-              placeholder="input domain name"
-              value={domain}
-              onChange={(e) => setDomain(e.target.value)}
-              required
-            />
-            <p>Type in the name of the Employee you want to find</p>
-            <input
-              type="text"
-              className="name input"
-              placeholder="input full name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-            <br />
-            <button className="btn btn-success">Search</button>
-          </form>
+          <div className="input-card">
+            <form onSubmit={onSubmitForm}>
+              <p className='paragraph'>Type in the domain name you want to see employees</p>
+              <input
+                type="text"
+                className="domain input"
+                placeholder="input domain name"
+                value={domain}
+                onChange={(e) => setDomain(e.target.value)}
+                required
+              />
+              <p className='paragraph'>Type in the name of the Employee you want to find</p>
+              <input
+                type="text"
+                className="name input"
+                placeholder="input full name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+              <br />
+              <button className="btn btn-success">Search</button>
+            </form>
+          </div>
 
-          {Object.keys(domainInfo).length > 0 && (
-            <div className="output">
-              <div className="domainResult" style={{ width: "18rem" }}>
-                <ul className="list-group list-group-flush">
-                  <li className="list-group-item">
-                    <span>Domain: </span>
-                    {domainInfo.data.domain}
-                  </li>
-                  <li className="list-group-item">
-                    <span>Organization: </span>
-                    {domainInfo.data.organization}
-                  </li>
-                  <li className="list-group-item">
-                    <span>Country: </span>
-                    {domainInfo.data.country}
-                  </li>
-                  <li className="list-group-item">
-                    <span>State </span>
-                    {domainInfo.data.state}
-                  </li>
-                </ul>
-              </div>
-
-              <div className="individualResult">
-                {verifyEmployee().state && (
-                  <div className="individual">
-                    <div className='line'> <span>Email :</span> {verifyEmployee().response.value}</div>
-                    <div className='line'>
-                     <span>Confidence:</span>  {verifyEmployee().response.confidence}
+          <div className="main-output">
+            {Object.keys(domainInfo).length > 0 && (
+              <div className="output">
+                <div className="domainResult" style={{ width: "18rem" }}>
+                  <ul className="list-group list-group-flush">
+                    <li className="list-group-item">
+                      <span>Domain: </span>
+                      {domainInfo.data.domain}
+                    </li>
+                    <li className="list-group-item">
+                      <span>Organization: </span>
+                      {domainInfo.data.organization}
+                    </li>
+                    <li className="list-group-item">
+                      <span>Country: </span>
+                      {domainInfo.data.country}
+                    </li>
+                    <li className="list-group-item">
+                      <span>State </span>
+                      {domainInfo.data.state}
+                    </li>
+                  </ul>
+                </div>
+              
+                <div className="individualResult">
+                  {verifyEmployee() && (
+                    <div className="individual">
+                      <div className="line">
+                        {" "}
+                        <span>Email :</span> {verifyEmployee().response.value}
+                      </div>
+                      <div className="line">
+                        <span>Confidence:</span>{" "}
+                        {verifyEmployee().response.confidence}
+                      </div>
+                      <div className="line">
+                        {" "}
+                        <span>Position:</span>{" "}
+                        {verifyEmployee().response.position}
+                      </div>
+                      <div className="line">
+                        <span>Department:</span>{" "}
+                        {verifyEmployee().response.department}
+                      </div>
                     </div>
-                    <div className='line'> <span>Position:</span> {verifyEmployee().response.position}</div>
-                    <div className='line'>
-                     <span>Department:</span>  {verifyEmployee().response.department}
+                  )}
+
+                  {!verifyEmployee() && name.length > 0 && (
+                    <div className="individual">
+                      {`${name} is not an Employee with ${domainInfo.data.organization}`}
                     </div>
-                  </div>
-                )}
+                  )}
 
-                {!verifyEmployee() && name.length > 0 && (
-                  <div className="individual">
-                    {`${name} is not an Employee with ${domainInfo.data.organization}`}
-                  </div>
-                )}
-
-                {name.length === 0 && (
-                  <div className="individual">
-                    {`Input an Employee's Fullname to verify if they are with ${domainInfo.data.organization}`}
-                  </div>
-                )}
+                  {name.length === 0 && (
+                    <div className="individual">
+                      {`Input an Employee's Fullname to verify if they are with ${domainInfo.data.organization}`}
+                    </div>
+                  )}
+                </div>
               </div>
-            </div>
-          )}
+            )}
+          </div>
         </div>
       </div>
     </Fragment>

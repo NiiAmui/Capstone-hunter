@@ -1,3 +1,5 @@
+import Main from "../../../components/main"
+
 import api from "../../../utils/api"
 import { verifyDomain } from "./ActionCreators"
 export const handleDomainVerification = (url) => (dispatch) => {
@@ -6,7 +8,8 @@ export const handleDomainVerification = (url) => (dispatch) => {
             dispatch(verifyDomain(res.data))
             resolve(res)
         }).catch((err) => {
-            reject(err)
+            // reject(err)
+            return <Main/>
         })
     })
 }

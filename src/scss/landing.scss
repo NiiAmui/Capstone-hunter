@@ -3,27 +3,22 @@
     overflow: hidden;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 .landing{
-    height: 100vh;
-    width: 100vw;
-    background-image: url("../images/landing.jpg");
-    width: 100vw;
   height: 100vh;
   height: 100vh;
   width: 100vw;
-  background-size: 100% 100%;
+  margin-left: 3rem;
+  margin-right: 2rem;
    
 
     .nav-header{
         display: flex;
         justify-content: space-between;
         height: 9%;
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
         margin-top: 1rem;
-        // border: 1px solid black;
 
     }
 
@@ -32,56 +27,48 @@
         display: grid;
         grid-template-columns: 0.8fr 1.2fr;
         align-content: center;
-        height: 90%;
-        margin: 0 1.5rem;
-        // border: 1px solid red;
-       
+       width: 90%;
 
 
         .text{
-            color: white;
-            // border: 1px solid yellow;
+            color: rgb(48, 47, 47);
             justify-self: center;
             align-self: center;
             align-content: center;
             height: fit-content;
 
             .bold{
-                font-weight: 600;
-                color: yellow;
+                font-weight: 700;
+                color: rgb(0, 96, 141);
                 font-size: 2.5rem;
                 margin-bottom: 2rem;
                 display: flex;
                 align-self: center;
                 width: 100%;
-                // border: 1px solid red;
+                font-family: 'Bebas Neue', cursive;
             }
             
             .paragraph{
-                margin-bottom: 1rem;
+                margin-bottom: 1.2rem;
+                font-weight: 500;
                 
             }
             .login-btn{
                 width: 100%;
-                // border: 1px solid red;
-                display: flex;
-                justify-content: center;
                 margin-top: 2.2rem;
 
                 button{
-                    background-color: transparent ;
-                    border: 2px solid white;
+                    background-color: rgb(13, 162, 231) ;
                     color: white;
                     font-size: 1.3rem;
                     box-sizing: content-box;
                     padding: 0.2rem 1.2rem;
                     border-radius: 20px;
+                    border: none;
 
                    &:hover{
-                       color: rgb(54, 2, 88);
-                       background-color: white;
                        transition: ease-in-out;
-                       font-weight: 600;
+                       background-color: rgb(0, 96, 141);
                    }
                 }
             }
@@ -89,12 +76,15 @@
         }
 
         .mag-glass{
-            width: 100%;
-            height: 100%;
+            width: 85%;
+            height: inherit;
             // border: 1px solid green;
             display: flex;
+            flex-direction: row;
             justify-self: center;
-            padding: 4rem;
+            align-content: center;
+            justify-content: center;
+            
 
             .search-image{
                 height: inherit;
@@ -105,5 +95,25 @@
 
    
 
+}
+
+@media screen and (max-width: 686px){
+    
+    .landing{
+        background-color: aquamarine;
+        margin: 0;
+
+        .nav-header{
+            margin-left: 1rem;
+        }
+
+        .body{
+            margin-left: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        
+        }
+    }
 }
 

@@ -2,7 +2,7 @@ import React from 'react';
 import '../scss/reset.scss';
 import {Link} from 'react-router-dom';
 import logo from '../images/hun-white-logo.png';
-import resetpic from '../images/resetPassword.png';
+import resetpic from '../images/resetPassword.png';  
 
 const Reset = () => {
     return (

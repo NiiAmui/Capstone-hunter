@@ -7,12 +7,8 @@
 
 .main {
   height: 100vh;
-  width: 100vw;
+  // width: 100vw;
   background-image: url("../images/main1.png");
-  width: 100vw;
-  height: 100vh;
-  height: 100vh;
-  width: 100vw;
   background-size: 100% 100%;
 
   .header {
@@ -65,8 +61,8 @@
 
       .input {
         padding-right: 5%;
-        width: 25rem;
-        height: 2.6rem;
+        max-width: 25rem;
+        max-height: 2.6rem;
         border-radius: 35px;
         padding: 1rem;
         border: 1px solid rgb(145, 143, 143);
@@ -110,50 +106,98 @@
     .output {
       display: flex;
       height: 90%;
-      border: 1px solid red;
+      // border: 1px solid red;
       justify-content: space-between;
       flex-direction: column;
       align-items: center;
       justify-items: center;
       padding: 3rem;
 
-
-    .domainResult{
+      .domainResult {
         background-color: white;
         border-radius: 10px;
         font-size: 1.2rem;
         padding: 1rem;
-        max-width: 23rem;
+        max-width: 20rem;
 
-       li{
-           border-top: 1px solid rgb(107, 106, 106);
-           
-           span{
-               font-weight: 500;
-               font-size: 1.5rem;
-           }
-       }
-    }
+        li {
+          border-top: 1px solid rgb(107, 106, 106);
 
-    .individualResult{
-        background-color: white;
-        border-radius: 10px;
-        font-size: 1.2rem;
-        padding: 1rem;
-        max-width: 23rem;
-
-
-        span{
+          span {
             font-weight: 500;
             font-size: 1.5rem;
+          }
+        }
+      }
+
+      .individualResult {
+        background-color: white;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        padding: 1rem;
+        max-width: 20rem;
+
+        span {
+          font-weight: 500;
+          font-size: 1.5rem;
         }
 
-        .line{
-            border-top: 1px solid rgb(107, 106, 106);
+        .line {
+          border-top: 1px solid rgb(107, 106, 106);
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 686px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    all: none
+  }
+
+  .main {
+    padding-bottom: 1.5rem;
+    border: 5px solid yellow;
+    
+  }
+
+  .body {
+    background-color: rgb(7, 191, 247);
+    height: 95vh;
+    padding: 0.5rem;
+    border: 1px solid red;
+    // display: grid;
+    // grid-auto-flow: row;
+    
+
+    .input-card {
+      display: block;
+      width: 100%;
+      border: 1px solid yellow;
+      height: inherit;
+
+      .paragraph {
+        font-size: 0.5rem;
+        border: 1px solid red;
+      }
+
+      .input {
+        font-size: 0.5rem;
+        width: 95%;
+        border: 1px solid red;
+      }
     }
 
+    button{
+      width: 60%;
+      font-size: medium;
+    }
 
+    .main-output {
+      border: 1px solid blue;
     }
   }
 }

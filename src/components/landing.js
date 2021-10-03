@@ -1,8 +1,8 @@
 import React from 'react';
 import '../scss/landing.scss';
 import {Link} from 'react-router-dom';
-import logo from '../images/hun-white-logo.png';
-import search from '../images/landing-search.png'
+import logo from '../images/hun-logo.png';
+import search from '../images/search-image.png' 
 
 
 const Landing = () => {
@@ -16,7 +16,7 @@ const Landing = () => {
             <div className='body'>
                 <div className='text'>
                 <div className='bold'>CURATED SEARCH </div>
-                <div className='paragraph'>MAKE ONLINE SEARCHES ON BUSINESSES BY JUST INPUTTING THEIR DOMAIN NAMES. YOU CAN ALSO MAKE SEARCHES ON INDIVIDUALS BY INPUTTING BOTH THE COMPANY DOMAIN AND THE FULL NAME OF THE INDIVIDUAL </div>
+                <div className='paragraph'>Get information on online businesses just by inputting their domain Name. You can also find employees of said companies </div>
                 <div className='login-btn'>
                 <Link to='/login'>
                 <button className='Login'>Login</button>

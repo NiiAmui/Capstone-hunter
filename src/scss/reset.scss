@@ -125,19 +125,22 @@
   
         .card-details {
             height: inherit;
-            width: inherit;
-          overflow: visible;
+            width: 80%;
           // display: flexbox;
           border-radius: 10px;
   
           // border: 1px solid red;
   
           button {
-            width: 80%;
+            width: 50%;
             display: flex;
             justify-items: center;
             align-items: center;
             text-align: center;
+          }
+
+          input{
+              max-width: 80%;
           }
   
           .signIn{
