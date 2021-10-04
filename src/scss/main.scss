@@ -108,6 +108,14 @@
           transition: ease-in-out;
         }
       }
+
+      .long button{
+        text-decoration: none;
+        width: fit-content;
+        margin-left: 1rem;
+        
+      }
+
     }
 
     .output {
@@ -194,8 +202,6 @@
         justify-items: center;
         padding: 0.3rem;
 
-
-        
       }
 
 
@@ -220,10 +226,12 @@
       }
     }
 
-    button {
+    .long, button {
       width: 60%;
       font-size: medium;
     }
+
+    
 
     #outputSide {
       // border: 1px solid blue;

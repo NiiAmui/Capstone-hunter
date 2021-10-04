@@ -1,0 +1,19 @@
+.results{
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    margin: 0.5rem;
+    max-width: max-content;
+    margin-left: 6rem;
+}
+.last{
+    margin-left: 2rem;
+   
+}
+
+@media screen and (max-width: 686px){
+    .results{
+        margin-left: 1rem
+    }
+}

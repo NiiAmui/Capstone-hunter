@@ -18,7 +18,7 @@ function Main(props) {
     e.preventDefault();
     verifyDomain(domain)
       .then((res) => {
-        console.log(res)
+        // console.log(res)
         return res;
       })
       .catch((err) => {
@@ -26,6 +26,7 @@ function Main(props) {
         return <Main />
       });
   };
+  console.log(domainInfo)
 
   const verifyEmployee = () => {
     if (Object.keys(domainInfo).length > 0) {
@@ -85,7 +86,7 @@ function Main(props) {
                 required
               />
               
-              <div><p className='paragraph'>Type in the name of the Employee you want to find</p></div>
+              <div><p className='paragraph'>Type in the name of the Executive you want to find</p></div>
               
               <input
                 type="text"
@@ -96,6 +97,9 @@ function Main(props) {
               />
               <br />
               <button className="btn btn-success">Search</button>
+              <Link to='/employees' className='long'>
+              <button className='btn'>FInd Employees</button>
+              </Link>
             </form>
           </div>
 

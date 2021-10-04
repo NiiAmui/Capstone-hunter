@@ -1,11 +1,14 @@
 import { combineReducers } from "redux";
 import isLoginReducer from "./isLoginReducer";
 import hunterReducer from "./hunterReducer";
+// import individual from "../../components/individual";
+import individualReducer from "./individualReducer";
 
 
 const appReducer  = combineReducers({
         authReducer : isLoginReducer,
-        domain : hunterReducer
+        domain : hunterReducer,
+        individual: individualReducer
     })
 
     const rootReducer = (state, action) => {
